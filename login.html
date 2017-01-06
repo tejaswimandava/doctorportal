@@ -7,14 +7,26 @@
 			background:url('loginbackground.jpg');
 			background-size: cover;
 
-					}
+			}
+			.detailscontainer{
+				background: url('loginback2.jpg');
+				background-size: 100% 100%;
+				width: 100%;
+				height: 400px;
+				border:1px solid grey;
+				border-radius: 5px;
+				/*position: fixed;*/
+
+			}
+
 		ul{
 			list-style-type: none;
 			/*width: 100%;*/
 			height: 40px;
 			/*overflow: hidden;*/
 			background-color: grey;
-			border:1px solid black;
+			border:1px solid grey;
+			border-radius: 5px;
 			margin:0px;
 			padding: 0px;
 		}
@@ -24,8 +36,7 @@
 			width: 90px;
 			/*height: inherit;*/
 
-
-		}
+			}
 	li	a{
 			display: block;
 			text-decoration: none;
@@ -84,10 +95,45 @@
 		.dropdown:hover .abtbtn {
    			 background-color: #555;
 		}
+		.formcontainer{
+			width: 100%;
+			border: 1px soild grey;
+			border-radius: 5px;
+			height: 300px;
+			background-color: #ACD1E9;
+			display: block;
+		}
+		form{
+			width: 40%;
+			display: inline-block;
+			/*margin: auto;*/
+			margin-left: 30%;
+			margin-right: 30%;
+			
+			
+		}
+		td{
+			width:50%;
+		}
+		.sub{
+			border-radius: 5px;
+			background-color: grey;
+			color: white;
+			 box-shadow:1px 1px 20px black;
+			 margin-left:27px;
+			 
+
+		}
+		/*#submitreset{
+			
+			text-align: center;
+		}*/
 		
 	</style>
 </head>
 <body>
+		<div class="detailscontainer">
+
 		<ul>
 		<li class="active"><a href="login.html">Home</a></li>
 		<li class="dropdown"><a class="abtbtn" href="about.html">About</a>
@@ -108,5 +154,47 @@
 					<a  href="hospital timings">Hospital Timings</a>
 			</div>
 	</div> -->
+	</div>
+	<div class="formcontainer">
+		<h3 align="center">Choose Login options</h3>
+		<form method="POST" action="patientpage.html">
+			<fieldset>
+				<label>Doctor</label><input type="radio" name="doctor" >
+				<label>Patient</label><input type="radio" name="patient"><br>
+				<table cellpadding="5px" cellspacing="20px">
+					<!-- <tr>
+					</tr> -->
+					<tr>
+						<td>
+							UserName :
+						</td>
+						<td>
+							<input type="text" name="username"></br>
+						</td>
+					</tr>
+					<tr>
+					<td>
+							Password :
+						</td>
+						<td>
+							<input type="password" name="username"></br>
+						</td>
+					</tr>
+					</table>
+					
+					<div id="submitreset">
+							<input type="submit" name="submit" value="Login" class="sub">
+							<input type="reset" name="reset" value="Reset" class="sub">
+					</div>					
+					
+					<p style="margin-left:27px">
+						Not a member yet ? <a href="Register.html">Register</a>
+					</p>
+
+
+				
+			</fieldset>
+		</form>
+	</div>
 </body>
 </html>
