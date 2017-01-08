@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<style type="text/css">
+		.container{
+			width: 100%;
+			height: 100%;
+		}
+	#backgroundimg{
+		height: 400px;
+		width: 100%;
+		/*width: inherit;*/
+		/*height: inherit;*/
+		/*position: fixed;*/
+		opacity: 0.8;
+		border-radius: 5px;
+	}
+	#formcontainer{
+		/*display: block;*/
+		/*align:center;*/
+		width: 100%;
+		}
+
+	form{
+		/*align:center;*/
+		border:1.5px solid grey;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		padding: 10px;
+		border-radius: 7px;
+		/*display: inline-block;*/
+	}
+	td{
+		width: 55%;
+	}
+	label{
+		margin-left:30px;
+	}
+	.sub{
+		margin-left: 30px;
+		border-radius: 6px;
+		box-shadow: 3px 3px 10px black;
+		color: white;
+		background:black;
+
+	}
+	.sbmtcan{
+		text-align: center;
+		
+
+	}
+
+	</style>
+</head>
+<body bgcolor="lightblue">
+	<div class="container">
+		<img id ="backgroundimg" src="registrationback.gif">
+		<div id="formcontainer">
+			<h3 align="center">Registration Form</h3>
+
+			<form method="POST" action="register.jsp">
+				<table cellspacing="10px" cellpadding="5px">
+					<tr>
+						<td>
+							<label>First Name :</label>
+						</td>
+						<td>
+							<input type="text" name="fname" placeholder="name">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Last Name :</label>
+						</td>
+						<td>
+							<input type="text" name="lname">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>User Name :</label>
+						</td>
+						<td>
+							<input type="text" name="uname">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Password :</label>
+						</td>
+						<td>
+							<input type="password" name="password">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Confirm Password :</label>
+						</td>
+						<td>
+							<input type="password" name="cpassword">
+						</td>
+					</tr>
+					<tr>
+						<td><label> Gender :</label></td>
+						<td><input type="radio" name="male" value="Male" checked="true"> Male
+							<input type="radio" name="female" value="Female"> Female
+							<input type="radio" name="other" value="Other"> Other
+								
+
+						</tr>
+					<tr>
+						<td>
+							<label>Date Of Birth :</label>
+						</td>
+						<td>
+						<!-- 	Mon 
+							<select><option>Jan</option>
+									<option>Feb</option>
+									<option>Mar</option>
+									<option>Apr</option>
+									<option>May</option>
+									<option>Jun</option>
+									<option>Jul</option>
+									<option>Aug</option>
+									<option>Sep</option>
+									<option>Oct</option>
+									<option>Nov</option>
+									<option>Dec</option>
+							</select>
+							Day
+							<select><option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+									<option>24</option>
+									<option>25</option>
+									<option>26</option>
+									<option>27</option>
+									<option>28</option>
+									<option>29</option>
+									<option>30</option>
+									<option>31</option>
+							</select>
+							Year -->
+							<input type="date" name="birthday" max="2016-12-31">
+						</td>
+						<tr>
+							<td>
+								Security Question :
+							</td>
+							<td>
+								<select><option> Name of your Pet</option>
+										<option> Name of your first car</option>
+										<option> Name of your love</option>
+										<option> Place where you met your spouse </option>
+										<option> Name of your school</option>
+										<option> Name of your child</option>
+										<option> Colour of your vehicle</option>
+								</select>
+							</td>
+						<tr>
+							<td><label>Address :</label></td>
+							<td> <textarea maxlength="170"></textarea>
+						</tr>
+
+				</table>
+				<div class="sbmtcan"	>
+					<input type="submit" name="submit" value="Submit" class="sub">
+					<input type="reset" name="reset" value="Reset" class="sub">
+				</div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
